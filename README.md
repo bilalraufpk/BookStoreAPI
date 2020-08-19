@@ -9,5 +9,6 @@ Test this API using postman or any api testing tool.
 Database file is also uploaded, its a runable solution.
 
 API key based basic authentication used in this code. You need to send given API Key in header while calling api.
+We can use token based / OAuth authentication too.
 
 VS2019 and SQL Server 2017 (databsefile is in sql file, you can run it in old sql version too)
