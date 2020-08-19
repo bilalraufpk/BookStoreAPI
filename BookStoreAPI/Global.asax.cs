@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookStoreAPI.Handlers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,6 +19,7 @@ namespace BookStoreAPI
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            GlobalConfiguration.Configuration.MessageHandlers.Add(new APIKeyHandler());
         }
     }
 }
