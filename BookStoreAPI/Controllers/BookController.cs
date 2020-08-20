@@ -103,12 +103,6 @@ namespace BookStoreAPI.Controllers
                     return BadRequest("Invalid Data");
                 }
 
-                Book _book = _bookRepository.GetBook(Id);
-                if (_book == null)
-                {
-                    return NotFound();
-                }
-
                 string _message;
                 if (!_bookRepository.ValidateInput(Model, out _message))
                 {

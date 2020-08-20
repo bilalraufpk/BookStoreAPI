@@ -99,12 +99,6 @@ namespace BookStoreAPI.Controllers
                     return BadRequest("Invalid Data");
                 }
 
-                BookCategory _category = _bookCategoryRepository.Get(Id);
-                if (_category == null)
-                {
-                    return NotFound();
-                }
-
                 _bookCategoryRepository.Update(Model, Id);
                 _bookCategoryRepository.Save();
 
